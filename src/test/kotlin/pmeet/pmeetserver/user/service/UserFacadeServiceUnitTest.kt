@@ -1,7 +1,6 @@
 package pmeet.pmeetserver.user.service
 
 import io.kotest.assertions.throwables.shouldThrow
-import io.kotest.core.spec.IsolationMode
 import io.kotest.core.spec.style.DescribeSpec
 import io.kotest.matchers.shouldBe
 import io.mockk.Runs
@@ -36,7 +35,6 @@ import pmeet.pmeetserver.user.dto.response.UserJwtDto
 
 @ExperimentalCoroutinesApi
 internal class UserFacadeServiceUnitTest : DescribeSpec({
-  isolationMode = IsolationMode.InstancePerTest
 
   val testDispatcher = StandardTestDispatcher()
 
